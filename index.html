@@ -37,13 +37,33 @@
     </style>
 </head>
 <body>
+  <div id="heart-overlay" style="position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:#fff;display:flex;align-items:center;justify-content:center;">
+    <button id="heart-btn" style="background:none;border:none;outline:none;cursor:pointer;">
+      <svg width="120" height="120" viewBox="0 0 120 120">
+        <path d="M60 100s-36-24-36-52a24 24 0 0 1 48 0 24 24 0 0 1 48 0c0 28-36 52-36 52z" fill="#e60026" stroke="#b3001b" stroke-width="3"/>
+      </svg>
+    </button>
+  </div>
+  <div id="main-content" style="display:none;">
     <div id="floating-objects"></div>
     <div class="dedication-text" id="dedication-text">
       <div class="signature" id="signature"></div>
     </div>
     <div class="countdown" id="countdown"></div>
     <div class="tree-container" id="tree-container"></div>
-    <audio src="Music/music1.mp3" id="bg-music" preload="auto" autoplay></audio>
+    <audio src="Music/music1.mp3" id="bg-music" preload="auto"></audio>
     <script src="Js/script.js"></script>
+    <script>
+      document.getElementById('heart-btn').onclick = function() {
+        document.getElementById('heart-overlay').style.display = 'none';
+        document.getElementById('main-content').style.display = '';
+        var audio = document.getElementById('bg-music');
+        if (audio) {
+          audio.volume = 0.7;
+          audio.play().catch(()=>{});
+        }
+      };
+    </script>
+  </div>
 </body>
 </html>
