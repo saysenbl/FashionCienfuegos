@@ -77,8 +77,8 @@ body {
   right: auto;
   transform: translateY(-50%);
   min-width: 320px;
-  max-width: 600px;
-  width: 60rem;
+  max-width: 60rem;
+  width: 100%;
   font-size: 1.5rem;
   color: #050505;
   font-family: 'Courier New', Courier, monospace;
@@ -142,7 +142,6 @@ body {
   pointer-events: none;
   transition: opacity 0.7s;
 }
-
 .signature.visible {
   opacity: 1;
   animation: signature-draw 2.2s steps(24) forwards;
