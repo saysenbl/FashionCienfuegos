@@ -249,3 +249,4 @@ function playBackgroundMusic() {
 window.addEventListener('DOMContentLoaded', () => {
   playBackgroundMusic();
 });
+
