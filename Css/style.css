@@ -80,7 +80,7 @@ body {
   max-width: 60rem;
   width: 100%;
   font-size: 1.5rem;
-  color: #050505;
+  color: #e60026; /* Rojo intenso */
   font-family: 'Courier New', Courier, monospace;
   white-space: pre-line;
   z-index: 3;
