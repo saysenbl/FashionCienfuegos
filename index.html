@@ -53,17 +53,17 @@
     <div class="tree-container" id="tree-container"></div>
     <audio src="Music/music1.mp3" id="bg-music" preload="auto"></audio>
     <script src="Js/script.js"></script>
-    <script>
-      document.getElementById('heart-btn').onclick = function() {
-        document.getElementById('heart-overlay').style.display = 'none';
-        document.getElementById('main-content').style.display = '';
-        var audio = document.getElementById('bg-music');
-        if (audio) {
-          audio.volume = 0.7;
-          audio.play().catch(()=>{});
-        }
-      };
-    </script>
-  </div>
+  </div> <!-- fin de main-content -->
+  <script>
+    document.getElementById('heart-btn').onclick = function() {
+      document.getElementById('heart-overlay').style.display = 'none';
+      document.getElementById('main-content').style.display = '';
+      var audio = document.getElementById('bg-music');
+      if (audio) {
+        audio.volume = 0.7;
+        audio.play().catch(()=>{});
+      }
+    };
+  </script>
 </body>
 </html>
